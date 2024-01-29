@@ -15,7 +15,9 @@
   "company_price",
   "customer_price",
   "sale_price",
-  "other_vehicle_items"
+  "other_vehicle_items",
+  "total_quantity",
+  "total_amount"
  ],
  "fields": [
   {
@@ -70,11 +72,21 @@
    "fieldtype": "Table",
    "label": "Other Vehicle Items",
    "options": "Vehicle Items"
+  },
+  {
+   "fieldname": "total_quantity",
+   "fieldtype": "Float",
+   "label": "Total Quantity"
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Currency",
+   "label": "Total Amount"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-01-29 13:19:38.099473",
+ "modified": "2024-01-29 13:58:19.209172",
  "modified_by": "Administrator",
  "module": "Vehicle Management",
  "name": "Vehicle Price",
