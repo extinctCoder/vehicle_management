@@ -20,7 +20,7 @@
  "fields": [
   {
    "fieldname": "posting_date",
-   "fieldtype": "Data",
+   "fieldtype": "Date",
    "in_list_view": 1,
    "label": "Posting Date",
    "reqd": 1
@@ -74,7 +74,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-01-29 13:02:01.707855",
+ "modified": "2024-01-29 13:19:38.099473",
  "modified_by": "Administrator",
  "module": "Vehicle Management",
  "name": "Vehicle Price",
