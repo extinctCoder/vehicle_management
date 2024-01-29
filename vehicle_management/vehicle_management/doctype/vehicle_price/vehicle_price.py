@@ -10,7 +10,8 @@ class VehiclePrice(Document):
 		# total_quantity = 0
 		# total_amount = 0
 		# for row in self.other_vehicle_items:
-		# 	total_quantity += row.quantity if not None else 0
+		# 	total_quantity += row.quantity
+		# 	row.sale_price = row.company_price+row.customer_price
 		# 	total_amount += row.amount if not None else 0
 		# self.total_quantity = total_quantity
 		# self.total_amount = total_amount
