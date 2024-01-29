@@ -36,7 +36,7 @@
   {
    "fieldname": "model_year",
    "fieldtype": "Link",
-   "label": "Vehicle Model",
+   "label": "Model Year",
    "options": "Vehicle Model Year"
   },
   {
@@ -62,18 +62,18 @@
   {
    "fieldname": "color",
    "fieldtype": "Link",
-   "label": "Vehicle Grade",
+   "label": "Color",
    "options": "Vehicle Color"
   },
   {
    "fieldname": "milage",
    "fieldtype": "Float",
-   "label": "Vehicle Color"
+   "label": "Milage"
   },
   {
    "fieldname": "cc",
    "fieldtype": "Float",
-   "label": "milage"
+   "label": "CC"
   },
   {
    "fieldname": "seat_capacity",
@@ -88,13 +88,13 @@
   },
   {
    "fieldname": "description",
-   "fieldtype": "Long Text",
+   "fieldtype": "Data",
    "label": "Description"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-01-29 12:26:13.919227",
+ "modified": "2024-01-29 12:43:42.623410",
  "modified_by": "Administrator",
  "module": "Vehicle Management",
  "name": "Vehicle Details",

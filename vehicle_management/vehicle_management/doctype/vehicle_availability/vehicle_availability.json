@@ -8,7 +8,25 @@
  "engine": "InnoDB",
  "field_order": [
   "vehicle_info_section",
-  "posting_date"
+  "posting_date",
+  "chassis_no",
+  "vehicle_name",
+  "model_year",
+  "shape",
+  "auction_grade",
+  "color",
+  "milage",
+  "cc",
+  "description",
+  "car_availability_status",
+  "status",
+  "port_location",
+  "shed_number",
+  "ship_details",
+  "inhouse_address",
+  "workshop_address",
+  "other_details",
+  "amended_from"
  ],
  "fields": [
   {
@@ -22,11 +40,136 @@
    "in_list_view": 1,
    "label": " Posting Date",
    "reqd": 1
+  },
+  {
+   "fieldname": "chassis_no",
+   "fieldtype": "Link",
+   "label": "Chassis No",
+   "options": "Vehicle Details"
+  },
+  {
+   "fetch_from": "chassis_no.car_model",
+   "fieldname": "vehicle_name",
+   "fieldtype": "Link",
+   "label": "Vehicle Name",
+   "options": "Vehicle Model",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "chassis_no.model_year",
+   "fieldname": "model_year",
+   "fieldtype": "Link",
+   "label": "Model Year",
+   "options": "Vehicle Model Year",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "chassis_no.shape",
+   "fieldname": "shape",
+   "fieldtype": "Select",
+   "label": "Shape",
+   "options": "Old\nNew",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "chassis_no.auction_grade",
+   "fieldname": "auction_grade",
+   "fieldtype": "Link",
+   "label": "Auction Grade",
+   "options": "Vehicle Grade",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "chassis_no.color",
+   "fieldname": "color",
+   "fieldtype": "Link",
+   "label": "Color",
+   "options": "Vehicle Color",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "chassis_no.milage",
+   "fieldname": "milage",
+   "fieldtype": "Float",
+   "label": "Milage"
+  },
+  {
+   "fetch_from": "chassis_no.cc",
+   "fieldname": "cc",
+   "fieldtype": "Float",
+   "label": "CC",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "chassis_no.description",
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "Description",
+   "read_only": 1
+  },
+  {
+   "fieldname": "car_availability_status",
+   "fieldtype": "Tab Break",
+   "label": "Car Availability Status"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Empty\nPort\nOnship\nInhouse\nWorkshop\nOther"
+  },
+  {
+   "depends_on": "eval:doc.status===\"Port\"",
+   "fieldname": "port_location",
+   "fieldtype": "Link",
+   "label": "Port Location",
+   "options": "Port Location"
+  },
+  {
+   "depends_on": "eval:doc.status===\"Port\"",
+   "fieldname": "shed_number",
+   "fieldtype": "Data",
+   "label": "Shed Number"
+  },
+  {
+   "depends_on": "eval:doc.status===\"Onship\"",
+   "fieldname": "ship_details",
+   "fieldtype": "Data",
+   "label": "Ship Details"
+  },
+  {
+   "depends_on": "eval:doc.status===\"Inhouse\"",
+   "fieldname": "inhouse_address",
+   "fieldtype": "Data",
+   "label": "Inhouse Address "
+  },
+  {
+   "depends_on": "eval:doc.status===\"Workshop\"",
+   "fieldname": "workshop_address",
+   "fieldtype": "Data",
+   "label": "Workshop Address"
+  },
+  {
+   "depends_on": "eval:doc.status===\"Other\"",
+   "fieldname": "other_details",
+   "fieldtype": "Data",
+   "label": "Other Details"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Vehicle Availability",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
   }
  ],
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
- "modified": "2024-01-29 12:32:25.037583",
+ "modified": "2024-01-29 12:48:22.902165",
  "modified_by": "Administrator",
  "module": "Vehicle Management",
  "name": "Vehicle Availability",

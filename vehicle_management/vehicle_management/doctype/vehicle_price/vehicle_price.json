@@ -14,7 +14,8 @@
   "vehicle_price",
   "company_price",
   "customer_price",
-  "sale_price"
+  "sale_price",
+  "other_vehicle_items"
  ],
  "fields": [
   {
@@ -63,11 +64,17 @@
    "fieldname": "sale_price",
    "fieldtype": "Currency",
    "label": "Sale Price"
+  },
+  {
+   "fieldname": "other_vehicle_items",
+   "fieldtype": "Table",
+   "label": "Other Vehicle Items",
+   "options": "Vehicle Items"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-01-29 12:30:08.896275",
+ "modified": "2024-01-29 13:02:01.707855",
  "modified_by": "Administrator",
  "module": "Vehicle Management",
  "name": "Vehicle Price",
