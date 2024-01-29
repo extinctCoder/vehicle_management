@@ -1,0 +1,92 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-01-29 12:28:03.497505",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "posting_date",
+  "vehicle_info",
+  "chassis_no",
+  "vehicle_name",
+  "vehicle_price",
+  "company_price",
+  "customer_price",
+  "sale_price"
+ ],
+ "fields": [
+  {
+   "fieldname": "posting_date",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Posting Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "vehicle_info",
+   "fieldtype": "Section Break",
+   "label": "Vehicle Info"
+  },
+  {
+   "fieldname": "chassis_no",
+   "fieldtype": "Link",
+   "label": "Chassis No",
+   "options": "Vehicle Details"
+  },
+  {
+   "fetch_from": "chassis_no.car_model",
+   "fieldname": "vehicle_name",
+   "fieldtype": "Link",
+   "label": "Vehicle Name",
+   "options": "Vehicle Model",
+   "read_only": 1
+  },
+  {
+   "fieldname": "vehicle_price",
+   "fieldtype": "Tab Break",
+   "label": "Vehicle Price"
+  },
+  {
+   "fieldname": "company_price",
+   "fieldtype": "Currency",
+   "label": "Company Price",
+   "reqd": 1
+  },
+  {
+   "fieldname": "customer_price",
+   "fieldtype": "Currency",
+   "label": "Customer Price"
+  },
+  {
+   "fieldname": "sale_price",
+   "fieldtype": "Currency",
+   "label": "Sale Price"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-01-29 12:30:08.896275",
+ "modified_by": "Administrator",
+ "module": "Vehicle Management",
+ "name": "Vehicle Price",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
