@@ -1,6 +1,13 @@
 {
  "add_total_row": 1,
- "columns": [],
+ "columns": [
+  {
+   "fieldname": "chassis_no.color",
+   "fieldtype": "Link",
+   "label": "Color",
+   "width": 0
+  }
+ ],
  "creation": "2024-01-29 14:24:49.045633",
  "disable_prepared_report": 0,
  "disabled": 0,
@@ -10,7 +17,7 @@
  "idx": 0,
  "is_standard": "Yes",
  "json": "{}",
- "modified": "2024-01-29 14:39:54.020175",
+ "modified": "2024-01-29 14:51:24.052637",
  "modified_by": "Administrator",
  "module": "Vehicle Management",
  "name": "Vehicle Details Report",
