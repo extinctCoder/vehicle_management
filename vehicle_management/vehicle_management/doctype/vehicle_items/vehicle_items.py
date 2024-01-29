@@ -5,5 +5,5 @@
 from frappe.model.document import Document
 
 class VehicleItems(Document):
-	def before_save(self):
+	def validate(self):
 		self.amount = self.quantity*self.rate  
