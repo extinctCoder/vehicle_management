@@ -18,7 +18,8 @@
   "other_vehicle_items",
   "total_quantity",
   "total_amount",
-  "totals"
+  "totals",
+  "grand_total"
  ],
  "fields": [
   {
@@ -88,11 +89,17 @@
    "fieldname": "totals",
    "fieldtype": "Section Break",
    "label": "Totals"
+  },
+  {
+   "fieldname": "grand_total",
+   "fieldtype": "Currency",
+   "label": "Grand Total",
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-01-29 14:17:09.835234",
+ "modified": "2024-01-29 14:18:40.378920",
  "modified_by": "Administrator",
  "module": "Vehicle Management",
  "name": "Vehicle Price",
