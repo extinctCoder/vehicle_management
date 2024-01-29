@@ -1,0 +1,117 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-01-29 12:21:12.751404",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "package",
+  "car_model",
+  "model_year",
+  "chassis_number",
+  "shape",
+  "auction_grade",
+  "color",
+  "milage",
+  "cc",
+  "seat_capacity",
+  "origin_country",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "package",
+   "fieldtype": "Data",
+   "label": "Package"
+  },
+  {
+   "fieldname": "car_model",
+   "fieldtype": "Link",
+   "label": "Car Model",
+   "options": "Vehicle Model"
+  },
+  {
+   "fieldname": "model_year",
+   "fieldtype": "Link",
+   "label": "Vehicle Model",
+   "options": "Vehicle Model Year"
+  },
+  {
+   "fieldname": "chassis_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Chassis Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "shape",
+   "fieldtype": "Select",
+   "label": "Shape",
+   "options": "Old\nNew"
+  },
+  {
+   "fieldname": "auction_grade",
+   "fieldtype": "Link",
+   "label": "Auction Grade",
+   "options": "Vehicle Grade"
+  },
+  {
+   "fieldname": "color",
+   "fieldtype": "Link",
+   "label": "Vehicle Grade",
+   "options": "Vehicle Color"
+  },
+  {
+   "fieldname": "milage",
+   "fieldtype": "Float",
+   "label": "Vehicle Color"
+  },
+  {
+   "fieldname": "cc",
+   "fieldtype": "Float",
+   "label": "milage"
+  },
+  {
+   "fieldname": "seat_capacity",
+   "fieldtype": "Int",
+   "label": " Seat Capacity"
+  },
+  {
+   "fieldname": "origin_country",
+   "fieldtype": "Select",
+   "label": "Origin Country",
+   "options": "Bangladesh\nIndia\nUK\nUSA\nGermany"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Long Text",
+   "label": "Description"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-01-29 12:25:23.478432",
+ "modified_by": "Administrator",
+ "module": "Vehicle Management",
+ "name": "Vehicle Details",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
