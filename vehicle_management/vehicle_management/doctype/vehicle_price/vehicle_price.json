@@ -19,7 +19,8 @@
   "total_quantity",
   "total_amount",
   "totals",
-  "grand_total"
+  "grand_total",
+  "amended_from"
  ],
  "fields": [
   {
@@ -95,11 +96,22 @@
    "fieldtype": "Currency",
    "label": "Grand Total",
    "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Vehicle Price",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
   }
  ],
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
- "modified": "2024-01-29 14:18:40.378920",
+ "modified": "2024-01-29 14:29:02.051179",
  "modified_by": "Administrator",
  "module": "Vehicle Management",
  "name": "Vehicle Price",
