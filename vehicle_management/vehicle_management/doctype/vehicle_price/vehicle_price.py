@@ -5,4 +5,6 @@
 from frappe.model.document import Document
 
 class VehiclePrice(Document):
-	pass
+	def before_save(doc, method):
+    # Your logic here
+		doc.sale_price = doc.company_price+doc.customer_price  
